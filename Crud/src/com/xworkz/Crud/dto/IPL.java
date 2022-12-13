@@ -24,76 +24,50 @@ public class IPL extends AbstractAudit {
 		return teamName;
 	}
 
+	public void setTeamName(String teamName) {
+		this.teamName = teamName;
+	}
+
 	public String getCaptainName() {
 		return captainName;
+	}
+
+	public void setCaptainName(String captainName) {
+		this.captainName = captainName;
 	}
 
 	public boolean isOwnerAlive() {
 		return ownerAlive;
 	}
 
+	public void setOwnerAlive(boolean ownerAlive) {
+		this.ownerAlive = ownerAlive;
+	}
+
 	public double getPurse() {
 		return purse;
-	}
-
-	public int getWins() {
-		return wins;
-	}
-
-	public int getDefeats() {
-		return defeats;
-	}
-
-	public void setteamName(String string) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void setownerAlive() {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void setTeamName(String teamName) {
-		this.teamName = teamName;
-	}
-
-	public void setOwnerAlive11(boolean ownerAlive) {
-		this.ownerAlive = ownerAlive;
 	}
 
 	public void setPurse(double purse) {
 		this.purse = purse;
 	}
 
-	public void setPurse(int i) {
-		// TODO Auto-generated method stub
-
+	public int getWins() {
+		return wins;
 	}
 
-	public void setWins(int i) {
-		// TODO Auto-generated method stub
-
+	public void setWins(int wins) {
+		this.wins = wins;
 	}
 
-	public void setDefeats(int i) {
-		// TODO Auto-generated method stub
-
+	public int getDefeats() {
+		return defeats;
 	}
 
-	public void setCaptainName(String string) {
-		// TODO Auto-generated method stub
-		
+	public void setDefeats(int defeats) {
+		this.defeats = defeats;
 	}
 
-	public void setOwnerAlive1(boolean ownerAlive2) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void setOwnerAlive(boolean ownerAlive2) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 }

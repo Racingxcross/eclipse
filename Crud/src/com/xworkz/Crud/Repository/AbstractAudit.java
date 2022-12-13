@@ -5,10 +5,7 @@ import java.time.LocalDateTime;
 
 public abstract class AbstractAudit implements Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+	
 	private String createdBy;
 	private LocalDateTime CreatedDate;
 	private String updatedBy;

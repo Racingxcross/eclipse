@@ -1,5 +1,6 @@
 package com.xworkz.Crud.Repository;
 
+import com.xworkz.Crud.Exception.TeamsSizeExceededException;
 import com.xworkz.Crud.dto.IPL;
 
 public class IPLRepositoryImpl implements IPLRepository {
@@ -10,15 +11,25 @@ public class IPLRepositoryImpl implements IPLRepository {
 	@Override
 	public boolean create(IPL ipl) {
 		System.out.println("running create of IPL" + ipl);
-		if (this.currentIndex > this.ipl.length) {
+		if (this.currentIndex >= this.ipl.length) {
 			System.err.println("size exceeded cannot add more ipl");
-			return false;
+			throw new TeamsSizeExceededException();
 		}
 		this.ipl[this.currentIndex]=ipl;
-		System.out.println("saved" + ipl+ "in index" + this.currentIndex++);
+		System.out.println("saved" + ipl+ "in index" + currentIndex);
 		this.currentIndex++;
+		
+		
 		return true;
 	}
+
+	@Override
+	public int total() {
+		System.out.println("total");
+		return IPLRepository.super.total();
+	}
+	
+
 	
 
 }
