@@ -23,11 +23,7 @@ public class IPLRepositoryImpl implements IPLRepository {
 		return true;
 	}
 
-	@Override
-	public int total() {
-		System.out.println("total");
-		return IPLRepository.super.total();
-	}
+
 	
 
 	
