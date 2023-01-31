@@ -10,8 +10,8 @@
 <h1>Page to send message ...</h1>
 	<form action="ride" method="post">
 	<pre>
-FirstName<input type="text" name="fname" /> 
-LastName<input  type="text" name="lname" /> 
+FirstName<input type="text" name="fName" /> 
+LastName<input  type="text" name="lName" /> 
 Gender<input type="radio" id="Male" name="gender" value="Male">Male
 	<input type="radio" id="Female" name="gender" value="Female">Female
 	<input type="radio" id="other" name="gender" value="other">Other
